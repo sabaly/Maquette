@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>SMS-SIR | acceuil</title>
+
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="icofont/icofont.min.css">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<div class="header-flex-box">
+			<div class="header-logo container">
+				<h1>
+					<a href="">SMS-SIR</a>
+				</h1>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="">Présentation</a>
+					</li>
+					<li>
+						<a href="">Enseignants</a>
+					</li>
+					<li>
+						<a href="">Contacts</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div id="presentation" class="container">
+			 <div class="text-presentation">
+			 	<h1>Plate-forme de cours via SMS</h1>
+
+			 	<p>
+			 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			 	</p>
+
+			 	<button class="btn">En savoir plus</button>
+			 </div>
+
+			 <div class="logo">
+			 	<img src="logo1.png">
+			 </div>
+		</div>
+
+		<div id="teacher-flex" class="container">
+			<div class="candidature">
+				<h2>Devenir enseignant</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+				</p>
+
+				<button class="btn"><a href="login.html">Portail</a></button>
+			</div>
+
+			<div class="teacher-describe">
+				<h1>Enseignant de sms-sir</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+
+
+
+		<div id="contact" class="container-fluid">
+			<div class="socials-networks">
+				<div>
+					<h2>Contactez-nous</h2>
+					<img src="logo.png">
+				</div>
+
+				<div class="socials-icons">
+					<a href="">
+						<i class="icofont-facebook rounded rounded-circle"></i>
+					</a>
+					<a href="">
+						<i class="icofont-linkedin rounded rounded-circle"></i>
+					</a>
+					<a href="">
+						<i class="icofont-envelope rounded rounded-circle"></i>
+					</a>
+					<a href="">
+						<i class="icofont-whatsapp rounded rounded-circle"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="contact-form">
+				<form action="../Controllers/messageController.php" method="post" role="form" class="php-email-form">
+						<div class="form-row">
+			                <div class="col-md-6 form-group">
+			                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="votre nom, 4 caractères au moins" />
+			                  <!--div class="validate"></div-->
+			                </div>
+
+			                <div class="col-md-6 form-group">
+			                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Adresse email invalide" />
+			                  <div class="validate"></div>
+			                </div>
+			            </div>
+
+						<div class="form-group">
+			                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="8 caractères au moins" />
+			                <div class="validate"></div>
+			            </div>
+
+						<div class="form-group">
+			                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Ecrivez nous quelque chose, s'il vous plait." placeholder="Message"></textarea>
+			                <div class="validate"></div>
+			            </div>
+
+			            <div class="mb-3">
+			                <div class="loading">Envoie</div>
+			                <div class="error-message"></div>
+			                <div class="sent-message">Votre message a été envoyé. Merci!</div>
+			            </div>
+			            <div class="text-center">
+			            	<button type="submit" class="btn">Envoyer</button>
+			            </div>
+
+					</form>
+			</div>
+		</div>
+	</main>
+
+	<footer id="footer">
+		<div class="copyright">
+			&copy; <strong><span>SMS-SIR</span></strong>-2020, sms-sir@gmail.com <br> Design by <strong>S@dmin</strong>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

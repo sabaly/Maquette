@@ -1,0 +1,265 @@
+/*
+	Header
+*/
+
+header {
+	width: 100%;
+	background: #005aff;
+	padding: 20px;
+	/*box-shadow: 2px 10px 15px 5px rgba(0, 0, 0, 0.4);*/
+	z-index: 9999;
+}
+
+.header-flex-box {
+	display: flex;
+	align-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: #00df00;
+	margin-right: 20px;
+}
+
+header a:hover {
+	transition: all 1s;
+	text-decoration: none;
+	color: #00df00;
+}
+
+header .menu {
+	position: relative;
+	top: 5px;
+	right: 10%;
+}
+header .menu ul {
+	list-style: none;
+	display: flex;
+	align-content: space-around;
+	font-size: 25px;
+}
+
+header .menu a:hover {
+	color: #fff;
+	transition: 0.5s;
+	border-bottom: 2px solid #fff;
+}
+/*
+	Présentation
+*/
+#presentation {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+#presentation .text-presentation {
+	flex: 0.8;
+	text-align: justify;
+	font-style: Montserrat sans-serif;
+	padding: 20px;
+}
+#presentation .text-presentation h1 {
+	font-size: 60px;
+}
+
+#presentation .logo img{
+	width: 400px;
+	height: 400px;
+}
+
+#presentation .logo {
+	margin: auto;
+	margin-left: 10px;
+	text-align: center;
+}
+
+/* General button */
+#presentation button {
+	border-color: #005aff;
+	color: #005aff;
+	border-radius: 20px;
+}
+
+#presentation  button:hover {
+	background: #005aff;
+	color: #00df00;
+}
+
+
+/*
+	Enseignants
+*/
+
+#teacher-flex {
+	display: flex;
+	align-content: space-around;
+	margin-top: 30px;
+}
+
+#teacher-flex .candidature {
+	flex: 0.6;
+	padding: 20px;
+	background: #005aff;
+	color: #fff;
+	margin-right: 40px;
+	margin: auto;
+	text-align: justify;
+}
+
+
+
+#teacher-flex .teacher-describe {
+	text-align: justify;
+	width: 50%;
+	padding: 20px;
+}
+
+#teacher-flex button {
+	transition: 0.5s;
+	border-color: #00df00;
+	color: #fff;
+	background: #00df00;
+	border-radius: 20px;
+	width: 100px;
+}
+
+#teacher-flex button:hover {
+	transition: 1s;
+	transform-origin: center;
+	transform: scale(1.2);
+}
+#teacher-flex button a, #teacher-flex button a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/*
+	Contact
+*/
+#contact {
+	background: #DAE2FF;
+	margin-top: 30px;
+	display: flex;
+	align-content: space-around;
+	padding: 20px;
+}
+
+#contact .socials-networks img {
+	width: 200px;
+	height: 200px;
+}
+
+#contact .socials-networks {
+	flex: 0.5;
+	background: #fff;
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+#contact .socials-networks .social-icons {
+	display: flex;
+	align-content: space-around;
+}
+
+#contact .socials-networks i {
+	font-size: 25px;
+	border: 2px solid #005aff;
+	color: #005aff;
+	padding: 10px;
+}
+
+#contact .socials-networks i:hover {
+	background: #005aff;
+	color: #00df00;
+	transition: 0.5s;
+	transform-origin: center;
+	transform: scale(0.7);
+	font-size: 20px;
+} 
+
+#contact a, #contact a:hover {
+	text-decoration: none;
+}
+
+#contact .contact-form {
+	margin: auto;
+	width: 50%;
+}
+
+#contact .contact-form button {
+	border: 2px solid #005aff;
+	color: #005aff;
+	border-radius: 20px;
+	width: 100px;
+}
+
+#contact .contact-form button:hover {
+	background: #005aff;
+	color: #00df00;
+}
+
+
+/*
+	Footer
+*/
+.copyright {
+	width: 100%;
+	background: rgba(0,0,0,0.9);
+	padding: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+#footer strong {
+	color: #005aff;
+}
+
+/*******************************************
+# 	Page connexion						   #
+*******************************************/
+
+#login-form-block {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	position: relative;
+	top: 40px;
+	border-radius: 10px;
+	padding: 5%;
+	border: 2px solid #005aff;
+	border-radius: 10px;
+	background: #DAE2FF;
+}
+
+
+#login-form-block img {
+	width: 200px;
+	height: 200px;
+}
+
+
+#login-form-block form * {
+	margin: 5px;
+}
+
+#login-form-block form button{
+	width: 100px;
+	border: 2px solid #005aff;
+	color: #005aff;
+	border-radius: 20px;
+}
+
+#login-form-block form button:hover {
+	background: #005aff;
+	color: #00df00;
+}
