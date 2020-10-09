@@ -233,7 +233,7 @@ header .menu a:hover {
 	width: 50%;
 	margin: auto;
 	position: relative;
-	top: 40px;
+	top: 30px;
 	border-radius: 10px;
 	padding: 5%;
 	border: 2px solid #005aff;
@@ -263,3 +263,29 @@ header .menu a:hover {
 	background: #005aff;
 	color: #00df00;
 }
+
+.back {
+	border-color: #ff0000;
+	color: #ff0000;
+	float: left;
+	width: 100px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.back a {
+	text-decoration: none;
+	color: #ff0000;
+}
+.back a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.back:hover {
+	transition: 1s;
+	transform-origin: center;
+	transform: scale(0.8);
+	color: #fff;
+	background: #ff0000;
+} 
