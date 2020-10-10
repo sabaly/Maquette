@@ -8,6 +8,28 @@
 	z-index: 9998;
 }
 
+.nav-menu {
+	position: fixed;
+	width: 50%;
+	left: 0px;
+	top: 10%;
+    text-align: left;
+	background-color: #005aff;
+	padding: 10px;
+	z-index: 9998;
+    overflow-y: auto;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    color: #00df00;
+    border-radius: 10px;
+	list-style: none;
+}
+
+.nav-menu ul {
+	list-style: none;
+}
+
 .nav-overly  {
     width: 100%;
     height: 100%;
@@ -28,6 +50,11 @@
 .nav-active .nav-menu {
   opacity: 1;
   visibility: visible;
+}
+
+.nav-menu .menu-item {
+	text-decoration: none;
+	color: #00df00;
 }
 
 /*
@@ -66,7 +93,7 @@ header a {
 	margin-right: 20px;
 }
 
-header .menu-item:hover {
+header .menu-item:hover, .nav-menu .menu-item:hover {
 	transition: all 1s;
 	text-decoration: none;
 	color: #00df00;
@@ -85,7 +112,7 @@ header .menu ul {
 	font-size: 20px;
 }
 
-header .header-logo {
+header .header-logo, .nav-menu .header-logo {
 	text-decoration: none;
 	color: #00df00;
 }
@@ -129,13 +156,13 @@ header .menu-item:hover {
 }
 
 /* General button */
-#presentation button {
+#presentation button, #teacher-flex .devenir_enseignant {
 	border-color: #005aff;
 	color: #005aff;
 	border-radius: 20px;
 }
 
-#presentation  button:hover {
+#presentation  button:hover, #teacher-flex .devenir_enseignant:hover {
 	background: #005aff;
 	color: #00df00;
 }
@@ -178,7 +205,7 @@ header .menu-item:hover {
 	margin-top: 30px;
 }
 
-#teacher-flex .candidature {
+#teacher-flex .portail {
 	flex: 0.6;
 	padding: 20px;
 	background: #005aff;
@@ -196,7 +223,7 @@ header .menu-item:hover {
 	padding: 20px;
 }
 
-#teacher-flex button {
+#teacher-flex .portail button {
 	transition: 0.5s;
 	border-color: #00df00;
 	color: #fff;
@@ -204,6 +231,8 @@ header .menu-item:hover {
 	border-radius: 20px;
 	width: 100px;
 }
+
+
 
 #teacher-flex button:hover {
 	transition: 1s;
@@ -319,6 +348,54 @@ header .menu-item:hover {
 	}
 }
 
+.contact-form .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact-form .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact-form .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact-form .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact-form .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+
+
 /*
 	Footer
 */
@@ -326,7 +403,7 @@ header .menu-item:hover {
 	width: 100%;
 	background: url('../img/banner.png') right center;
 	padding: 20px;
-	color: #000;
+	color: #fff;
 	text-align: center;
 	height: 15vh;
 }

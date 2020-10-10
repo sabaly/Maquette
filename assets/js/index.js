@@ -1,13 +1,12 @@
 !(function($) {
 	"use strict";
 
-	$(document).on('click', '.menu-item, .scrollto', function(e) {
+	$(document).on('click', 'header .menu-item, .nav-menu .menu-item', function(e) {
 	      	e.preventDefault();
 
 		    var target = $(this.hash);
 
 		    if (target.length) {
-
 		        var scrollto = target.offset().top;
 		        var scrolled = 20;
 
@@ -22,6 +21,7 @@
 		        if ($(this).attr("href") == '#header') {
 		          scrollto = 0;
 		        }
+
 
 		        $('html, body').animate({
 		          scrollTop: scrollto
@@ -46,7 +46,7 @@
 	//Navigation for mobile
 	if($('.menu').length) {
 		var $nav = $('.menu').clone().prop({
-			class: 'nav-menu d-none'
+			class: 'nav-menu d-lg-none'
 		});
 
 		$('body main').append($nav);
@@ -66,7 +66,7 @@
 		        if ($('body main').hasClass('nav-active')) {
 			        $('body main').removeClass('nav-active');
 			        $('.menu-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-			        $('.menu-toggle i').css('color', '#ff007a');
+			        $('.menu-toggle i').css('color', '#00df00');
 	        		$('.nav-overly').fadeOut(1000);
 		        }
 	      	}
@@ -75,4 +75,7 @@
 	}else if ($(".menu, .menu-toggle").length) {
 	    $(".menu, .menu-toggle").hide();
 	}
+
+
+
 })(jQuery);
