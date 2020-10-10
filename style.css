@@ -1,4 +1,36 @@
 /*
+	Générale
+*/
+/*  Menu toggle */
+.menu-toggle {
+	font-size: 25px;
+	color: #00df00;
+	z-index: 9998;
+}
+
+.nav-overly  {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: none;
+    transition: ease-in-out 0.2s;
+}
+
+.nav-active {
+  overflow: hidden;
+}
+
+.nav-active .nav-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*
 	Header
 */
 
@@ -108,6 +140,33 @@ header .menu-item:hover {
 	color: #00df00;
 }
 
+@media (max-width: 768px) {
+
+	#presentation {
+		flex-direction: column-reverse;
+		width: 100%;
+		margin: auto;
+	}
+
+
+	#presentation .logo img {
+		width: 300px;
+		height: 300px;
+	}
+
+	#presentation .text-presentation {
+		width: 100%;
+		margin: 10px;
+	}
+
+	#presentation .text-presentation h1 {
+		font-size: 50px;
+	}
+
+	#presentation .text-presentation p {
+		padding: 5px;
+	}
+}
 
 /*
 	Enseignants
@@ -155,6 +214,18 @@ header .menu-item:hover {
 	text-decoration: none;
 	color: #fff;
 }
+
+@media (max-width:  768px) {
+	#teacher-flex {
+		flex-direction: column;
+	}
+
+	#teacher-flex .teacher-describe {
+		width: 100%;
+	}
+
+}
+
 /*
 	Contact
 */
@@ -223,6 +294,30 @@ header .menu-item:hover {
 	color: #00df00;
 }
 
+@media(max-width: 768px ) {
+	#contact {
+		flex-direction: column;
+	}
+
+	#contact .socials-networks img {
+		width: 150px;
+		height: 150px;
+	}
+
+	#contact .socials-networks {
+		flex: 1;
+		padding: 15px;
+	}
+
+	#contact .socials-networks i {
+		font-size: 15px;
+	}
+
+	#contact .contact-form {
+		width: 100%;
+		margin-top: 10px; 
+	}
+}
 
 /*
 	Footer
